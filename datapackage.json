@@ -1,0 +1,54 @@
+{
+  "name": "cities_population",
+  "title": "Cities Population",
+  "description": "information about cities and population",
+  "resources": [
+    {
+      "name": "cities",
+      "title": "Cities",
+      "schema": {
+        "fields": [
+          {
+            "name": "city",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "location",
+            "type": "geopoint",
+            "format": "default"
+          }
+        ]
+      },
+      "path": "cities.csv",
+      "format": "CSV",
+      "mediatype": "text/csv"
+    },
+    {
+      "name": "population",
+      "title": "Population",
+      "schema": {
+        "fields": [
+          {
+            "name": "city",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "year",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "population",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
+      },
+      "path": "population.csv",
+      "format": "CSV",
+      "mediatype": "text/csv"
+    }
+  ]
+}
